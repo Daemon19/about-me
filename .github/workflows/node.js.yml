@@ -28,4 +28,6 @@ jobs:
         cache: 'npm'
 
     - name: Deploy with github pages
-      run: npm run deploy
+      run: |
+        npm install
+        npm run deploy
