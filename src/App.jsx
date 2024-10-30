@@ -13,6 +13,7 @@ import Home from "./Components/Home";
 import Portfolio from "./Components/Portfolio";
 
 import "./styles.css";
+import { Helmet } from "react-helmet";
 
 /**
  * This object represents your information. The project is set so that you
@@ -41,6 +42,9 @@ const secondaryColor = "#D2F1E4";
 const App = () => {
   return (
     <div id="main">
+      <Helmet>
+        <title>Tentang Mahatma</title>
+      </Helmet>
       <Header />
       <Home name={siteProps.name} title={siteProps.title} />
       <About />
